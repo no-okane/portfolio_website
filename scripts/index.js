@@ -34,3 +34,18 @@ function updateUnderline(activeIndex) {
 document.addEventListener('DOMContentLoaded', function() {
     updateUnderline(wrap.activeIndex);
 });
+
+
+// 각 섹션에 애니메이션을 적용
+function updateAnimation(activeIndex) {
+    const sections = document.querySelectorAll('.swiper-slide');
+    sections.forEach((section, index) => {
+        if (index === activeIndex) {
+            // 활성화된 슬라이드에 애니메이션을 추가
+            section.classList.add('swiper-slide-active');
+        } else {
+            // 비활성화된 슬라이드는 애니메이션을 제거
+            section.classList.remove('swiper-slide-active');
+        }
+    });
+}
