@@ -19,11 +19,7 @@ body * {transition: all 0.3s;}
 #wrap .swiper-wrapper .home .container section * {text-transform: uppercase; font-size: 0.875rem;}
 #wrap .swiper-wrapper .home .container section h1 {
     text-align: center; font-size: 3.5rem; line-height: 1.5;
-    /* 애니메이션============================================================= */
-    opacity: 0; /* 처음에는 보이지 않도록 설정 */ transform: translateY(30px); /* 아래에서 위로 이동 */
 }
-/* 슬라이드가 활성화될 때 애니메이션 */
-#wrap .swiper-slide-active .home .container section h1 {opacity: 1; transform: translateY(0); /* 원래 위치로 돌아옴 */}
 #wrap .swiper-wrapper .home .container section h1 em {font-size: 3.5rem; font-weight: 800; line-height: 1.5;}
 #wrap .swiper-wrapper .home .container section div {
     display: flex; justify-content: space-between; align-items: center; width: 92%;
