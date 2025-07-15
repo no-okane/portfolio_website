@@ -1,0 +1,32 @@
+header {
+    margin: 0 auto;
+    position: fixed; left: 50%; top: 20px; z-index: 10; transform: translate(-50%, 0%);
+    width: 1760px; height: 80px;
+    border-radius: 50px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+header nav {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 93%; margin: 0 auto; height: 80px;
+}
+header nav .left {display: flex; gap: 60px;}
+header nav .left a {font-size: 0.875rem; font-weight: 500; position: relative; padding-bottom: 5px;}
+header nav .left a:hover {/* text-decoration: underline; */ border-bottom: 1px solid #353535;}
+
+/* 밑줄 */
+nav div.left a::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    width: 0%; /* 초기 상태에서 밑줄을 0%로 설정 */ height: 1px; /* 밑줄 두께 */
+    background-color: #353535; /* 밑줄 색상 */
+    transition: 0.3s ease; /* 애니메이션 효과 추가 */
+}
+
+/* 활성화된 링크에 밑줄 효과 */
+nav div.left a.scroll-active::after {
+    width: 100%; /* 링크가 활성화되면 밑줄을 100%로 확장 */
+}
+
+header nav .left a:hover {}
+header nav .contact {}
+header nav .contact a {font-size: 0.875rem; color: #fff; background: #353535; padding: 7px 20px; border-radius: 50px;}
+header nav .contact a:hover {background: #555555;}
