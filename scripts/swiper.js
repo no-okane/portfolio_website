@@ -5,7 +5,6 @@ const wrap = new Swiper('#wrap', {
     on: {
         slideChange: function() {
             updateUnderline(this.activeIndex); // 슬라이드가 바뀔 때마다 밑줄 업데이트
-            resetAnimations(); // 슬라이드 변경 시 애니메이션 리셋
             ScrollTrigger.refresh();  // 스크롤 트리거 갱신
         }
     }
@@ -24,3 +23,53 @@ nav.forEach((obj, idx) => {
         updateUnderline(idx); // 클릭한 링크에 밑줄 추가
     });
 });
+
+
+// 디자인
+const detailBnr = new Swiper ('#detail_bnr',{
+    loop:true,
+    spaceBetween:0,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false, // 사용자가 상호작용 후에도 autoplay 유지
+    },
+    //speed:3500,
+    navigation:{
+        nextEl:'#detail_bnr .swiper-button-next',
+        prevEl:'#detail_bnr .swiper-button-prev',
+    },
+})
+
+const snsBnr = new Swiper ('#sns_bnr',{
+    loop:true,
+    spaceBetween:10,
+    slidesPerView : 4,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false, // 사용자가 상호작용 후에도 autoplay 유지
+    },
+    //speed:3500,
+    navigation:{
+        nextEl:'#sns_bnr .swiper-button-next',
+        prevEl:'#sns_bnr .swiper-button-prev',
+    },
+})
+
+
+const horizBnr = new Swiper ('#horiz_bnr',{
+    loop:true,
+    spaceBetween:10,
+    slidesPerView : 3,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false, // 사용자가 상호작용 후에도 autoplay 유지
+    },
+    //speed:3500,
+    navigation:{
+        nextEl:'#sns_bnr .swiper-button-next',
+        prevEl:'#sns_bnr .swiper-button-prev',
+    },
+})

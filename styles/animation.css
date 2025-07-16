@@ -1,3 +1,4 @@
+/* 홈============================================================================ */
 #wrap .swiper-wrapper .home .container section h1 {opacity: 0; animation: slideUpFadeIn 2.5s ease forwards;}
 #wrap .swiper-wrapper .home .container section div {opacity: 0; animation: slideUpFadeIn 2.5s ease 0.5s forwards;}
 
@@ -10,4 +11,73 @@
         opacity: 1;
         transform: translateY(0); /* 원래 위치로 돌아옴 */
     }
+}
+
+
+/* 프로필============================================================================ */
+#wrap .swiper-wrapper .profile .container .title {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease, transform 2.5s ease; /* 부드러운 애니메이션 */
+}
+#wrap .swiper-wrapper .profile .container .contets .profile {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 0.5s, transform 2.5s ease 0.5s; /* 부드러운 애니메이션 */
+}
+#wrap .swiper-wrapper .profile .container .contets .education {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 1s, transform 2.5s ease 1s; /* 부드러운 애니메이션 */
+}
+
+#wrap .swiper-wrapper .profile .container .contets .experience {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 1.3s, transform 2.5s ease 1.3s; /* 부드러운 애니메이션 */
+}
+
+#wrap .swiper-wrapper .profile .container .contets .skills {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 1.7s, transform 2.5s ease 1.7s; /* 부드러운 애니메이션 */
+}
+
+#wrap .swiper-wrapper .profile .container .contets .skills em {
+    width: 0%; /* 초기 width 설정 */
+    transition: width 2.5s ease 3s; /* width 애니메이션 */
+}
+
+/* 웹============================================================================ */
+.web_projects .container .contents .left .top {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease, transform 2.5s ease; /* 부드러운 애니메이션 */
+}
+.web_projects .container .contents .left .mid {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 0.5s, transform 2.5s ease 0.5s; /* 부드러운 애니메이션 */
+}
+.web_projects .container .contents .left .bottom {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 1s, transform 2.5s ease 1s; /* 부드러운 애니메이션 */
+}
+.web_projects .container .contents > .right > div {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 1.3s, transform 2.5s ease 1.3s; /* 부드러운 애니메이션 */
+}
+
+/* ㅂㅇ============================================================================ */
+#wrap .swiper-wrapper .last .container .contents h1 {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease, transform 2.5s ease; /* 부드러운 애니메이션 */
+}
+#wrap .swiper-wrapper .last .container .contents p {
+    opacity: 0; /* 초기 opacity 설정 */
+    transform: translateY(50px); /* y 초기 위치 설정 */
+    transition: opacity 2.5s ease 0.7s, transform 2.5s ease 0.7s; /* 부드러운 애니메이션 */
 }
