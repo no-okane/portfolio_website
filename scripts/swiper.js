@@ -25,6 +25,25 @@ nav.forEach((obj, idx) => {
 });
 
 
+//웹
+const webProjects = new Swiper ('#web_projects',{
+    loop:true,
+    spaceBetween:0,
+    centeredSlides: true,
+    /* autoplay: {
+        delay: 0,
+        disableOnInteraction: false, // 사용자가 상호작용 후에도 autoplay 유지
+    }, */
+    //speed:3500,
+    navigation:{
+        nextEl:'#web_projects .swiper-button-next',
+        prevEl:'#web_projects .swiper-button-prev',
+    },
+    scrollbar:{
+        el:'#web_projects .swiper-scrollbar'
+    },
+})
+
 // 디자인
 const detailBnr = new Swiper ('#detail_bnr',{
     loop:true,

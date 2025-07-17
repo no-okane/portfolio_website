@@ -74,7 +74,8 @@ function applyGSAPAnimation(slide) {
 // 슬라이드에서 애니메이션을 제거하는 함수
 function removeGSAPAnimation(slide) {
     const elementsToRemove = [
-        '.title', '.profile', '.education', '.experience', '.skills', '.web_projects .container .contents .left .top', '.web_projects .container .contents .left .mid', '.web_projects .container .contents .left .bottom', '.web_projects .container .contents > .right > div',
+        '.title', '.profile', '.education', '.experience', '.skills', '.web_projects .container .contents .left .top',
+        //'.web_projects .container .contents .left .mid', '.web_projects .container .contents .left .bottom', '.web_projects .container .contents > .right > div',
     ];
 
     elementsToRemove.forEach(selector => {
