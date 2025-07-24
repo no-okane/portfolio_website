@@ -123,11 +123,17 @@ body * {transition: all 0.3s;}
 }
 #wrap .swiper-wrapper .web_projects .container .contents .left .bottom a img {}
 #wrap .swiper-wrapper .web_projects .container .contents > .right {
-    background: url(../images/bg002.png) no-repeat center / cover; width: 100%;
+    width: 100%;
     display: flex; justify-content: center;
 }
-#wrap .swiper-wrapper .web_projects .container .contents > .right > div {display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; gap: 50px;}
-#wrap .swiper-wrapper .web_projects .container .contents > .right > div > img {width: 700px; height: 410px; background-color: antiquewhite;}
+.web_projects .slide1 .contents > .right {background: url(../images/bg002.png) no-repeat center / cover;}
+.web_projects .slide2 .contents > .right {background: url(../images/bg003.png) no-repeat center / cover;}
+.web_projects .slide3 .contents > .right {background: url(../images/bg004.png) no-repeat center / cover;}
+.web_projects .slide4 .contents > .right {background: url(../images/bg005.png) no-repeat center / cover;}
+.web_projects .slide5 .contents > .right {background: url(../images/bg006.png) no-repeat center / cover;}
+.web_projects .slide6 .contents > .right {background: url(../images/bg007.png) no-repeat center / cover;}
+#wrap .swiper-wrapper .web_projects .container .contents > .right > div {display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; gap: 0px;}
+#wrap .swiper-wrapper .web_projects .container .contents > .right > div > img {width: 700px;}
 #wrap .swiper-wrapper .web_projects .container .contents > .right > div a {
     color: #fff; background: #353535; border-radius: 50px; padding: 12px 20px; width: max-content;
     display: flex; gap: 10px;
@@ -146,6 +152,7 @@ body * {transition: all 0.3s;}
 #wrap .swiper-wrapper .design .container .right {width: 335px; height: 566px;}
 #wrap .swiper-wrapper .design .container .right .swiper-wrapper {}
 #wrap .swiper-wrapper .design .container .right .swiper-wrapper .swiper-slide  {background-color: #EAC8A6;}
+#wrap .swiper-wrapper .design .container .right .swiper-wrapper .swiper-slide img {width: 100%;}
 #wrap .swiper-wrapper .design .container .right .swiper-wrapper .swiper-button-prev  {}
 #wrap .swiper-wrapper .design .container .right .swiper-wrapper .swiper-button-next  {}
 #wrap .swiper-wrapper .design .container .left {
@@ -155,11 +162,14 @@ body * {transition: all 0.3s;}
 #wrap .swiper-wrapper .design .container .left .top {width: 100%;}
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper {width: 100%; height: 400px;}
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-slide {background-color: aquamarine;}
+#wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-slide img {width: 100%;}
+#wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-button-prev {}
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-button-prev {}
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-button-next {}
 #wrap .swiper-wrapper .design .container .left .bottom {width: 100%; height: 150px;}
 #wrap .swiper-wrapper .design .container .left .bottom .swiper-wrapper {}
 #wrap .swiper-wrapper .design .container .left .bottom .swiper-wrapper .swiper-slide {background-color: antiquewhite;}
+#wrap .swiper-wrapper .design .container .left .bottom .swiper-wrapper .swiper-slide img {width: 100%;}
 #wrap .swiper-wrapper .design .container .left .bottom .swiper-wrapper .swiper-button-prev {}
 #wrap .swiper-wrapper .design .container .left .bottom .swiper-wrapper .swiper-button-next {}
 #wrap .swiper-wrapper .design .container .swiper-button-prev, 
@@ -176,3 +186,17 @@ body * {transition: all 0.3s;}
 #wrap .swiper-wrapper .last .container .contents * {text-align: center;}
 #wrap .swiper-wrapper .last .container .contents h1 {font-size: 2.25rem; font-weight: 600; margin-bottom: 20px;}
 #wrap .swiper-wrapper .last .container .contents p {}
+
+
+/* 디자인 팝업============================================= */
+.popup_bg {
+    width: 100%; height: 100vh; position: fixed; left: 0; top: 0; z-index: 999;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+}
+.popup_bg .popup {
+    width: 600px; margin: auto; height: auto; max-height: 90vh; overflow: auto; padding: 50px;
+    background-color: #fff; box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    overflow-x: hidden; overflow-y: auto; 
+}
+.popup_bg .popup img {width: 100%; height: auto; display: block;}

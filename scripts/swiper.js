@@ -88,7 +88,7 @@ const horizBnr = new Swiper ('#horiz_bnr',{
     },
     //speed:3500,
     navigation:{
-        nextEl:'#sns_bnr .swiper-button-next',
-        prevEl:'#sns_bnr .swiper-button-prev',
+        nextEl:'#horiz_bnr .swiper-button-next',
+        prevEl:'#horiz_bnr .swiper-button-prev',
     },
 })

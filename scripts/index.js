@@ -49,3 +49,57 @@ function updateAnimation(activeIndex) {
         }
     });
 }
+
+
+
+
+
+
+
+
+
+
+// 디자인 클릭 시 팝업 실행 클릭한 이미지가 팝업 이미지로 교체
+const thubimage1 = document.querySelectorAll('#detail_bnr .swiper-slide');
+const thubimage2 = document.querySelectorAll('#sns_bnr .swiper-slide');
+const thubimage3 = document.querySelectorAll('#horiz_bnr .swiper-slide');
+const popupBg = document.querySelector('.popup_bg');
+console.log(thubimage1, thubimage2, thubimage3, popupBg);
+
+// 팝업 숨기기 popupbg
+popupBg.style.display='none';
+
+// 클릭해서 팝업
+for (let detail of thubimage1){
+    detail.addEventListener('click',() => {
+        //console.log("클릭확인")
+        popupBg.style.display='flex';
+        popupBg.children[0].children[0].src = detail.children[0].src;
+        //팝업 실행 시 전체 수직 swiper 스크롤 기능 막기
+        wrap.mousewheel.disable(); // 스크롤 풀기 enable
+    })
+}
+for (let sns of thubimage2){
+    sns.addEventListener('click',() => {
+        //console.log("클릭확인")
+        popupBg.style.display='flex';
+        popupBg.children[0].children[0].src = sns.children[0].src;
+        //팝업 실행 시 전체 수직 swiper 스크롤 기능 막기
+        wrap.mousewheel.disable(); // 스크롤 풀기 enable
+    })
+}
+for (let horiz of thubimage3){
+    horiz.addEventListener('click',() => {
+        //console.log("클릭확인")
+        popupBg.style.display='flex';
+        popupBg.children[0].children[0].src = horiz.children[0].src;
+        //팝업 실행 시 전체 수직 swiper 스크롤 기능 막기
+        wrap.mousewheel.disable(); // 스크롤 풀기 enable
+    })
+}
+
+// 배경popupbg 클릭 시 팝업 popupbg 숨기기
+popupBg.addEventListener('click', () => {
+    popupBg.style.display='none';
+    wrap.mousewheel.enable();
+})
