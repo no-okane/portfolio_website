@@ -120,6 +120,7 @@ body * {transition: all 0.3s;}
 #wrap .swiper-wrapper .web_projects .container .contents .left .bottom a {
     border-radius: 50px; border: 1px solid #353535; padding: 12px 20px; width: max-content;
     display: flex; gap: 10px; margin-left: auto;
+    text-wrap: nowrap;
 }
 #wrap .swiper-wrapper .web_projects .container .contents .left .bottom a img {}
 #wrap .swiper-wrapper .web_projects .container .contents > .right {
@@ -137,6 +138,7 @@ body * {transition: all 0.3s;}
 #wrap .swiper-wrapper .web_projects .container .contents > .right > div a {
     color: #fff; background: #353535; border-radius: 50px; padding: 12px 20px; width: max-content;
     display: flex; gap: 10px;
+    text-wrap: nowrap;
 }
 #wrap .swiper-wrapper .web_projects .container .contents > .right > div a img {}
 
@@ -161,8 +163,8 @@ body * {transition: all 0.3s;}
 }
 #wrap .swiper-wrapper .design .container .left .top {width: 100%;}
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper {width: 100%; height: 400px;}
-#wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-slide {background-color: aquamarine;}
-#wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-slide img {width: 100%;}
+#wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-slide {background-color: aquamarine; width: 100%; height: 100%; object-fit: cover;}
+#wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-slide img {width: 100%; height: 100%; object-fit: cover;  object-position: top left; }
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-button-prev {}
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-button-prev {}
 #wrap .swiper-wrapper .design .container .left .top .swiper-wrapper .swiper-button-next {}
@@ -197,6 +199,6 @@ body * {transition: all 0.3s;}
 .popup_bg .popup {
     width: 600px; margin: auto; height: auto; max-height: 90vh; overflow: auto; padding: 50px;
     background-color: #fff; box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-    overflow-x: hidden; overflow-y: auto; 
+    overflow-x: hidden; /* overflow-y: auto;  */
 }
 .popup_bg .popup img {width: 100%; height: auto; display: block;}

@@ -75,6 +75,13 @@ for (let detail of thubimage1){
         //console.log("클릭확인")
         popupBg.style.display='flex';
         popupBg.children[0].children[0].src = detail.children[0].src;
+        // 팝업의 스크롤 초기화
+        setTimeout(() => {
+            const popup = popupBg.querySelector('.popup');
+            popup.scrollTop = 0;  // 팝업 내 스크롤을 맨 위로 설정
+        }, 10); // 작은 딜레이를 주어 DOM 업데이트 후 스크롤 초기화
+        // 전체 페이지 스크롤 초기화 (필요시)
+        window.scrollTo(0, 0);  // 페이지 스크롤을 맨 위로
         //팝업 실행 시 전체 수직 swiper 스크롤 기능 막기
         wrap.mousewheel.disable(); // 스크롤 풀기 enable
     })
@@ -84,6 +91,13 @@ for (let sns of thubimage2){
         //console.log("클릭확인")
         popupBg.style.display='flex';
         popupBg.children[0].children[0].src = sns.children[0].src;
+        // 팝업의 스크롤 초기화
+        setTimeout(() => {
+            const popup = popupBg.querySelector('.popup');
+            popup.scrollTop = 0;  // 팝업 내 스크롤을 맨 위로 설정
+        }, 10); // 작은 딜레이를 주어 DOM 업데이트 후 스크롤 초기화
+        // 전체 페이지 스크롤 초기화 (필요시)
+        window.scrollTo(0, 0);  // 페이지 스크롤을 맨 위로
         //팝업 실행 시 전체 수직 swiper 스크롤 기능 막기
         wrap.mousewheel.disable(); // 스크롤 풀기 enable
     })
